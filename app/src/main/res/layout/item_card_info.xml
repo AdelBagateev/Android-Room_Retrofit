@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="68dp"
+    android:background="@color/main_color"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_info_id"
+        tools:text="1"
+        app:layout_goneMarginStart="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="32sp"
+        android:textColor="@color/hint_color"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_short_info"
+         />
+
+    <TextView
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/text_color"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/tv_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/tv_short_info"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_info_id"
+        android:layout_marginStart="32dp"
+        tools:text="1111111111" />
+
+    <TextView
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/text_color"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/tv_short_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tv_info_id"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_number"
+        android:text="Coutry"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
